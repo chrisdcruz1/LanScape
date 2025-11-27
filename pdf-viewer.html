@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>PDF Viewer</title>
+  <link rel="stylesheet" href="styles.css">
+  <style>
+    .viewer-wrapper { max-width: 1000px; margin: 2rem auto; padding: 1rem; }
+    .pdf-frame { width: 100%; height: 80vh; border: 1px solid #ccc; }
+    .note { margin-top: 1rem; font-size: 0.95rem; color: #444; }
+    nav a { margin-right: 1rem; }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="viewer-wrapper">
+    <h1>PDF Viewer</h1>
+    <p class="note">Place your PDF at <code>assets/sample.pdf</code> (or update the <code>src</code> below to the correct path).</p>
+
+    <!-- Embedded PDF -->
+    <iframe class="pdf-frame" src="MLOps practical .pdf" title="PDF viewer">
+      Your browser doesn't support embedded PDFs. You can <a href="assets/sample.pdf">download the PDF</a> instead.
+    </iframe>
+
+    <p class="note">If the PDF does not render, click the download link above or open the page in a modern browser that supports PDF embedding.</p>
+  </main>
+</body>
+</html>
